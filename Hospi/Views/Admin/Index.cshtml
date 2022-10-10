@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Administrador del personal</h2>
+        <p>A continuación, encontrará las entidades que conforman la planta profesional </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Cargo</th>
+                    <th>Descripción</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="danger">
+                    <td>Medico</td>
+                    <td>Encargado de hacer diagnosticos médicos y registrar la evolución del paciente</td>
+                    <td>
+                        <a class="btn btn-primary mb-3 b" asp-controller="Medicos" asp-action="Index">Listado</a>
+
+                    </td>
+                </tr>
+                <tr class="success">
+                    <td>Enfermeria</td>
+                    <td>Encargado de tomar de signos vitales y hacer anotaciones</td>
+                    <td>
+                        <a class="btn btn-primary">Listado</a>
+                    </td>
+                </tr>
+                <tr class="info">
+                    <td>Auxiliar</td>
+                    <td>Encargado de asignar médicos y enfermeros a los pacientes</td>
+                    <td>
+                        <a class="btn btn-primary">Listado</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+﻿@model Medico
+@{
+    ViewData["Title"] = "Crear Médico";
+}
+<h1>Ingrese los datos del médico</h1> 
+
+<div asp-validation-summary ="ModelOnly" class="text-danger"></div>
+
+<form  asp-action="Crear">
+     
+     <div class="mb-3">
+         <label asp-for=" Nombre" class="form-label">Nombre</label>
+          <input type="text" asp-for=" Nombre" class="form-control" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+     </div>
+
+    <div class="mb-3">
+        <label asp-for=" Apellido" class="form-label">Apellido</label>
+        <input type="text" asp-for=" Apellido" class="form-control" />
+        <span asp-validation-for="Apellido" class="text-danger"></span>
+
+    </div>
+    <div class="mb-3">
+        <label asp-for=" NumeroTelefono" class="form-label">Número telefónico</label>
+        <input type="text" asp-for=" NumeroTelefono" class="form-control" />
+        <span asp-validation-for="NumeroTelefono" class="text-danger"></span>
+
+     </div>
+@*    <div class="mb-3">
+        <label asp-for=" CorreoElectronico" class="form-label">Email</label>
+        <input type="text" asp-for=" CorreoElectronico" class="form-control" />
+    </div>*@
+    <div class="mb-3">
+        <label asp-for=" Codigo" class="form-label"></label>
+        <input asp-for=" Codigo" class="form-control" />
+        <span asp-validation-for="Codigo" class="text-danger"></span>
+
+    </div>
+    <div class="mb-3">
+        <label asp-for="Rethus" class="form-label"></label>
+        <input type="text" asp-for="Rethus" class="form-control" />
+        <span asp-validation-for="Rethus" class="text-danger"></span>
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
+    <a class="btn btn-secondary" asp-action="Index">Cancelar</a>
+
+
+</form>
+
+@section Scripts{
+    <partial name = "_ValidationScriptsPartial" />
+}

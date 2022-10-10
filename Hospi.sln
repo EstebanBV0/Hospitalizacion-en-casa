@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hospi", "Hospi\Hospi.csproj", "{9C8BC8CB-1ADB-41CA-B2B4-457CD883DEEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C8BC8CB-1ADB-41CA-B2B4-457CD883DEEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C8BC8CB-1ADB-41CA-B2B4-457CD883DEEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C8BC8CB-1ADB-41CA-B2B4-457CD883DEEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C8BC8CB-1ADB-41CA-B2B4-457CD883DEEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C714163B-16B5-428F-9235-CB75822D57B2}
+	EndGlobalSection
+EndGlobal
